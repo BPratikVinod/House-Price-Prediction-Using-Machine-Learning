@@ -1,2 +1,3 @@
 # House-Price-Prediction-Using-Machine-Learning
-This is a machine learning project that shows how the prices of the house changes depending on the various parameters.
+
+This is a project that contains a model created using regression and which predicts the house prices in USA based on a dataset of various variables such as average income of the residents, average age of the house and so on...
