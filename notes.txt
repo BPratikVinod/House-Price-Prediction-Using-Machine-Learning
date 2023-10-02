@@ -1,0 +1,40 @@
+pandas: data preproccessing and analysis
+numpy: "numerical python" used for numerical computation
+matplotlib: visualising the results of the ML experiments
+            plotting charts and charts.
+seaborn: it is the library that basically creates visually appealing charts and bars
+pairplot: The Seaborn Pairplot allows us to plot pairwise relationships between variables within a dataset.
+
+lm = LinearRegression():-  initialises the LinearRegression model and stores in lm
+
+lm.fit(X_train,y_train) :- it finds the best-fitting linear line that minimizes the difference between the predicted values and the actual target values in the training data.
+
+Avg. Area Income	21.528276 :- When you see a coefficient of $21.52 for Avg. Area Income in the model's output, it means that, on average, for every $1 increase in Avg. Area Income, the predicted house price increases by $21.52, assuming all other factors affecting house price remain unchanged.
+
+
+Mean Absolute Error (MAE): The MAE measures the average absolute difference between the predicted values and the actual values. It quantifies how far off, on average, your predictions are from the actual values. A lower MAE indicates better accuracy.
+
+Mean Squared Error (MSE): The MSE measures the average squared difference between the predicted values and the actual values. It gives more weight to large errors and penalizes them. Smaller MSE values indicate better accuracy.
+
+Root Mean Squared Error (RMSE): The RMSE is the square root of the MSE. It provides a more interpretable measure of error in the same units as the target variable. Lower RMSE values are better.
+
+R-squared (R2) Score: The R2 score measures the proportion of the variance in the target variable that is explained by the model. It ranges from 0 to 1, with higher values indicating a better fit. An R2 score of 1 means the model perfectly explains the variance, while 0 means it doesn't explain any better than a horizontal line.
+
+
+
+
+
+
+
+
+just before model prediction:- 
+
+Does this make sense? Probably not because I made up this data. If you want real data to repeat this sort of analysis, check out the [boston dataset](http://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_boston.html):
+
+after that 
+
+
+    from sklearn.datasets import load_boston
+    boston = load_boston()
+    print(boston.DESCR)
+    boston_df = boston.data
